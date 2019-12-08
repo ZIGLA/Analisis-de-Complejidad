@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ZIGLA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+
+  <body style="font-size: small;">
+
+    <div class="header sticky-top" >
+      <div class="container-fluid">
+       <a href="#default">
+         <img  class="logo" src="http://tinyimg.io/i/ALzzcTx.png" alt="https://imgur.com/pSB3uux">
+       </a>
+       <div class="header-right">
+         <a href="#titulo" class="title">Analisis de Complejidad de Programas</a>
+       </div>
+     </div>
+    </div>
+
+
+
+    <div class="container-fluid" style="margin-left:-2rem; margin-top:-1rem;">
+
+      <div class="modal-body row">
+        <div class="col-md-7" >
+          <article class="card-group-item" >
+            <h6 class="card-header" style="height: 3rem;"><b>Dimensión 1:</b> La naturaleza de la intervención
+            </h6>
+            <div class="filter-content">
+              <div class="card-body"  >
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                     <b>1. Objetivos</b>
+                     <br />
+                     <b>1 -</b> Pocos y claramente definidos.
+                     <br />
+                     <b>5 -</b> Múltiples, amplios y vagamente definidos.">
+                     1. Objetivos
+                    </label>
+                    <select type="number" name="a1" class="form-control form-control-sm" id="a1" placeholder="1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                     <b>2. Tamaño</b>
+                     <br />
+                     <b>1 -</b> Afecta a una población pequeña.
+                     <br />
+                     <b>5 -</b> Afecta a una población grande.">
+                      2. Tamaño
+                    </label>
+                    <select type="number" name="a2" class="form-control form-control-sm" id="a2" placeholder="1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                     <b>3. Estabilidad del diseño</b>
+                     <br />
+                     <b>1 -</b> Relativamente estable.
+                     <br />
+                     <b>5 -</b> Diseño emergente.">
+                     3. Estabilidad del diseño
+                    </label>
+                    <select type="number" name="a3" class="form-control form-control-sm" id="a3" placeholder="1"/>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+              </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                     <b>4. Procesos de implementación</b>
+                     <br />
+                     <b>1 -</b> Claramente definido en el diseño del proyecto.
+                     <br />
+                     <b>5 -</b> A menudo no están claramente definidos y son cambiantes.">
+                     4. Procesos de implementación
+                    </label>
+                    <select type="number" name="a4" class="form-control form-control-sm" id="a4" placeholder="1"/>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                     <b>5. Servicios o componentes</b>
+                     <br />
+                     <b>1 -</b> Relativamente pocos.
+                     <br />
+                     <b>5 -</b> Número alto.">
+                     5. Servicios o componentes
+                    </label>
+                    <select type="number" name="a5" class="form-control form-control-sm" id="a5" placeholder="1"/>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                     <b>6. Complejidad técnica</b>
+                     <br />
+                     <b>1 -</b> Baja.
+                     <br />
+                     <b>5 -</b> Alta.">
+                     6. Complejidad técnica
+                   </label>
+                    <select type="number" name="a6" class="form-control form-control-sm" id="a6" placeholder="1"/>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                     <b>7. Complejidad social</b>
+                     <br />
+                     <b>1 -</b> Baja.
+                     <br />
+                     <b>5 -</b> Alta.">
+                     7. Complejidad social</label>
+                    <select type="number" name="a7" class="form-control form-control-sm" id="a7" placeholder="1"/>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                    <b>8. Duración</b>
+                    <br />
+                    <b>1 -</b> Fechas claras de inicio y fin.
+                     <br />
+                     <b>5 -</b> No hay fecha clara de finalización y a veces, no hay fecha clara de inicio.">
+                     8. Duración</label>
+                    <select type="number" name="a8" class="form-control form-control-sm" id="a8" placeholder="1"/>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                     <b>9. Piloto del diseño del programa</b>
+                     <br />
+                     <b>1 -</b> Probado y usados varias veces.
+                     <br />
+                     <b>5 -</b> Relativamente nuevo y no probado.">
+                     9. Piloto del diseño del programa
+                   </label>
+                    <select type="number" name="a9" class="form-control form-control-sm" id="a9" placeholder="1"/>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+              </div>
+              </div> <!-- card-body.// -->
+            </div>
+          </article>
+
+          <article class="card-group-item">
+              <h6 class="card-header" style="height: 3rem;">
+                <b>Dimensión 2:</b> Instituciones y partes interesadas
+              </h6>
+            <div class="filter-content">
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                     <b>1. Presupuesto</b>
+                     <br />
+                     <b>1 -</b> Uso de los fondos claramente definido.
+                     <br />
+                     <b>5 -</b> Apoyo general del presupuesto sin definiciones claras de los servicios a ser financiados.">
+                     1. Presupuesto
+                    </label>
+                    <select type="number" name="b1" class="form-control form-control-sm" id="b1" placeholder="1"/>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                     <b>2. Financimiento y agencias de implementación</b>
+                     <br />
+                     <b>1 -</b> Relativamente pocos.
+                     <br />
+                     <b>5 -</b> Número alto.">
+                     2. Financimiento y agencias de implementación
+                   </label>
+                    <select type="number" name="b2" class="form-control form-control-sm" id="b2" placeholder="1"/>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                     <b>3. Partes interesadas (stakeholders)</b>
+                     <br />
+                     <b>1 -</b> Relativamente pocos y con intereses similares.
+                     <br />
+                     <b>5 -</b> Muchos y diversos.">
+                      3. Partes interesadas (stakeholders)
+                    </label>
+                    <select type="number" name="b3" class="form-control form-control-sm" id="b3" placeholder="1"/>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+              </div> <!-- card-body.// -->
+            </div>
+          </article>
+
+          <article class="card-group-item">
+              <h6 class="card-header" style="height: 3rem;"><b>Dimensión 3:</b> Causalidad y cambio
+              </h6>
+            <div class="filter-content">
+              <div class="card-body">
+                <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                   <b>1. Trayectorias causales</b>
+                   <br />
+                   <b>1 -</b> Una única lógica causal.
+                   <br />
+                   <b>5 -</b> Múltiples lógicas causales (no lineales, interconectados, recursive feedback loops).">
+                    1. Trayectorias causales
+                  </label>
+                  <select type="number" name="c1" class="form-control form-control-sm" id="c1" placeholder="1"/>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                   <b>2. Certeza en los resultados</b>
+                   <br />
+                   <b>1 -</b> Relativamente altos niveles de certeza.
+                   <br />
+                   <b>5 -</b> Bajo grado de certeza.">
+                   2. Certeza en los resultados
+                 </label>
+                  <select type="number" name="c2" class="form-control form-control-sm" id="c2" placeholder="1"/>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                   <b>3. Acuerdo y claridad en acciones apropiadas para abordar problemas</b>
+                   <br />
+                   <b>1 -</b> Alto nivel de acuerdo y claridad.
+                   <br />
+                   <b>5 -</b> Bajo nivel de acuerdo y claridad.">
+                   3. Acuerdo y claridad en acciones apropiadas para abordar problemas
+                 </label>
+                  <select type="number" name="c3" class="form-control form-control-sm" id="c3" placeholder="1"/>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              </div> <!-- card-body.// -->
+            </div>
+          </article>
+
+          <article class="card-group-item">
+              <h6 class="card-header" style="height: 3rem;"><b>Dimensión 4:</b> Contexto/Integración y naturaleza del sistema
+              </h6>
+            <div class="filter-content">
+              <div class="card-body">
+                <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label class="prueba"
+                   data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                   <b>1. Claridad de los factores contextuales que influencian la implementación y el cambio</b>
+                   <br />
+                   <b>1 -</b> Factores contextuales conocidos y concimiento sobre su potencial influencia disponible.
+                   <br />
+                   <b>5 -</b> Facotres contextuales y su potencial influencia en la implementación y en el cambio en gran medida desconocidos.">
+                     1. Claridad de los factores contextuales que influencian la implementación y el cambio
+                 </label>
+                  <select type="number" name="d1" class="form-control form-control-sm" id="d1" placeholder="1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label data-toggle="popover" data-html="true" data-trigger="hover" data-content="
+                   <b>2. Procesos de cambio conductual</b>
+                   <br />
+                   <b>1 -</b> Procesos simples que son bien comprendidos.
+                   <br />
+                   <b>5 -</b> Múltiples mecanismos de promoción de cambios de comportamiento complejos.">
+                   2. Procesos de cambio conductual
+                  </label>
+                  <select type="number" name="d2" class="form-control form-control-sm" id="d2" placeholder="1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <button type="button-bottom" class="btn btn-md btn-primary" onclick="graphMe()">Submit</button>
+                </div>
+              </div>
+              </div> <!-- card-body.// -->
+            </div>
+          </article>
+
+        </div>
+
+
+          <div class="col-md-5" name="grafico" style="width: 100%;">
+            <div class="position-fixed" style="width: 39%;">
+              <div class="push2"></div>
+              <canvas id="polarAreaChart " width="500" height="500"></canvas>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
